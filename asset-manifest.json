@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.fc60696a.css",
-    "main.js": "/Personal-Website/static/js/main.fa6f2be2.js",
-    "static/media/background.jpg": "/Personal-Website/static/media/background.6b64863c6efb8271e393.jpg",
+    "main.css": "/Personal-Website/static/css/main.e0647880.css",
+    "main.js": "/Personal-Website/static/js/main.cc08bc5f.js",
+    "static/media/susu.jpg": "/Personal-Website/static/media/susu.f83d74930a062ed3a9b1.jpg",
     "static/media/pokergame.jpg": "/Personal-Website/static/media/pokergame.cd50b851b9f0fcb4aabd.jpg",
     "static/media/opencart.jpg": "/Personal-Website/static/media/opencart.a612447693f7bcb4231f.jpg",
     "static/media/regtech1.jpg": "/Personal-Website/static/media/regtech1.4b609faef7fc4b0d7e11.jpg",
-    "static/media/TT.png": "/Personal-Website/static/media/TT.399bfcabf1f0fc1e3cdb.png",
     "index.html": "/Personal-Website/index.html",
-    "main.fc60696a.css.map": "/Personal-Website/static/css/main.fc60696a.css.map",
-    "main.fa6f2be2.js.map": "/Personal-Website/static/js/main.fa6f2be2.js.map"
+    "main.e0647880.css.map": "/Personal-Website/static/css/main.e0647880.css.map",
+    "main.cc08bc5f.js.map": "/Personal-Website/static/js/main.cc08bc5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc60696a.css",
-    "static/js/main.fa6f2be2.js"
+    "static/css/main.e0647880.css",
+    "static/js/main.cc08bc5f.js"
   ]
 }
