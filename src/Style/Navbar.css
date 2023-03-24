@@ -1,0 +1,163 @@
+.navbar{
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #FFF;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px #ccc;
+  z-index: 1;position: fixed;
+}
+  
+.link{
+  margin: 1em;
+  color: #000;
+  text-decoration: none;
+}
+  
+.link:last-child{
+  margin-right: 4em;
+}
+  
+.link::after{
+  content: '';
+  height: 20px;
+  position: absolute;
+  margin-left: 1em;
+  border-right: 1px solid #000;
+}
+  
+.link:nth-child(3)::after{
+  content: '';
+  border-right: none;
+}
+  
+.nav-btn{
+  display: none;
+}
+  
+@media screen and (max-width:767px){
+  .navbar{
+    min-width: 324px;
+  }
+
+  .link{
+    display: none;
+  }
+
+  /* 點擊後效果 */
+  .navbar.all{
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+  .nav-all{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #f3f3f3;
+  }
+
+  .link-all{
+    margin: 1em 0em 1em 0em;
+    color: #000;
+    text-decoration: none;
+  }
+    
+  .link-all:last-child{
+    margin-right: 0em;
+  }
+    
+  .link-all::after{
+    border-right: none;
+  }
+  
+
+  .nav-btn{
+    display: inline-block;
+    height: 4px;
+    min-width: 25.5px;
+    border-bottom: 3px solid #000;
+    margin-right: 2.5em;
+  }
+    
+  .nav-btn.opcity{
+    animation: opcity 1s 1s forwards;
+  }
+
+  @keyframes opcity{
+    0%{border-bottom: 3px solid #000}
+    100%{border-bottom: 3px solid transparent}
+  }
+    
+  .nav-btn::before{
+    content: "";
+    height: 3px;
+    width: 26px;
+    background: #000;
+    bottom: 33px;
+    position: absolute;
+  }
+  
+  .nav-btn.action::before{
+    animation: down1 .3s ease-in forwards, cross1 .3s .3s ease-in forwards ;
+  }
+
+  .nav-btn.close::before{
+    animation: down2 .5s ease-in reverse;
+  }
+    
+  .nav-btn::after{
+    content: "";
+    height: 3px;
+    width: 26px;
+    background: #000;
+    top: 37px;
+    position: absolute;
+  }
+    
+  .nav-btn.action::after{
+    animation: up1 .3s ease-in forwards, cross2 .3s .3s ease-in forwards;
+  }
+
+  .nav-btn.close::after{
+    animation: up2 .5s ease-in reverse;
+  }
+  
+  @keyframes cross1{
+    0%{transform:rotate(0deg)}
+    90%{transform:rotate(50deg)}
+    100%{transform:rotate(45deg)}
+  }
+    
+  @keyframes cross2{
+    0%{transform:rotate(0deg)}
+    90%{transform:rotate(-50deg)}
+    100%{transform:rotate(-45deg)}
+  }
+    
+  @keyframes up1{
+    0%{top:37px}
+    100%{top:44px}
+  }
+    
+  @keyframes down1{
+    0%{bottom:33px}
+    100%{bottom:40px}
+  }
+}
+  
+@keyframes up2{
+  0%{top:37px}
+  100%{top:44px}
+}
+  
+@keyframes down2{
+  0%{bottom:33px}
+  100%{bottom:40px}
+}

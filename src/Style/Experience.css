@@ -1,0 +1,122 @@
+.exp-card{
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: .5em;
+    padding: 1.5em;
+}
+
+.exp-date{
+    width: 28%;
+    position: relative;
+    top: 6px;
+    text-align: right;
+    font-size: 16px;
+    color: #888;
+    animation: fade-in 1s ease-in forwards;
+}
+
+.exp-content{
+    text-indent: -1em;
+}
+
+@keyframes fade-in{
+    0%  {right: 58px; opacity: 0;}
+    25% {right: 32px; opacity: 0.2;}
+    50% {right: 16px; opacity: 0.5;}
+    75% {right: -3px; opacity: 0.75;}
+    100%{right: 2px; opacity: 1;}
+}
+
+.exp-content{
+    width: 60%;
+}
+
+/* 小線線 */
+.exp-card::before{
+    content: '';
+    height: 260px;
+    position: absolute;
+    top: 34px;
+    left: 239px;
+    border-left: 2px solid #888;
+}
+
+.exp-card:last-child::before{
+    content: '';
+    height: 130px;
+    position: absolute;
+    border-left: 2px solid #888;
+}
+
+/* 小圓圓 */
+.exp-card::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 34px;
+    left: 233px;
+    background-color: #FFF;
+    border: 2px solid #888;
+    border-radius: 50%;
+}
+
+.exp-title{
+    font-size: 22px;
+}
+
+.exp-description{
+    margin-top: .5em;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #888;
+}
+
+.exp-description::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-right: .5em;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 767px){
+    .exp-card{
+        width: 0px;
+        min-width: 330px;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 2em;
+    }
+  
+    .exp-date{
+        width: 100%;
+        top: 10px;
+    }
+
+    .exp-content{
+        width: 85%;
+    }
+    
+    .exp-title{
+        position: relative;
+        bottom: 15px;
+    }
+
+    /* 小線線 */
+    .exp-card::before{
+        top: 38px;
+        left: 26px;
+    }
+    
+    /* 小圓圓 */
+    .exp-card::after{
+        top: 38px;
+        left: 21px;
+    }
+}

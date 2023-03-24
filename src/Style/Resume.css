@@ -1,0 +1,60 @@
+.resume{
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: page-jump .5s;
+}
+
+@keyframes page-jump{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.resume h1{
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    border-bottom: 1px solid #888;
+}
+
+.exp{
+    width: 60%;
+    padding: 10em 10em 3em 10em;
+}
+
+.exps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    width: 60%;
+    padding: 0em 10em 10em 10em;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px){
+    .resume{
+        min-width: 404px;
+    }
+    .exp{
+        padding: 10em 0em 3em 0em;
+    }
+
+    .skill{
+        padding: 0em 0em 10em 0em;
+    }
+    
+    .skills{
+        flex-direction: column;
+    }
+}

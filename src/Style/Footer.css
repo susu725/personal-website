@@ -1,0 +1,41 @@
+.footer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.personal-information{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    margin-right: .5em;
+}
+
+@media screen and (max-width: 767px){
+    .footer{
+      flex: 1;
+    }
+    
+    .personal-information{
+        flex-direction: column;
+    }
+    
+    .phone{
+        margin: 3em 0em .5em 3em;
+    }
+
+    .E-mail{
+        margin: 3em 0em .5em 3em;
+
+    }
+
+    .copyright{
+        margin: 3em 0em 3em 3em;
+
+    }
+}
