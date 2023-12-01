@@ -36,7 +36,7 @@ const projects = [
 
 root.render(
   <>
-    <BrowserRouter basename='/Personal-Website'>
+    <BrowserRouter basename='/personal-website'>
       <Routes>
         <Route path='/Resume' element={<Resume exps={exps} skills={skills} />}></Route>
         <Route path='/Project' element={<Project projects={projects} />}></Route>

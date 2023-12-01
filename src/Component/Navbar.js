@@ -33,7 +33,6 @@ function Navbar() {
                 <Link to="/" className={link}>About</Link>
                 <Link to="/Resume" className={link}>Resume</Link>
                 <Link to="/Project" className={link}>Project</Link>
-
             </div>
             <div className={btn} onClick={handleNav}></div>
         </div>
